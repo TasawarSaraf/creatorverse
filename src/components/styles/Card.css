@@ -1,0 +1,48 @@
+.card-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+    color: white; /* Assuming the background might be dark */
+  }
+
+
+
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding a background for readability */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.name-container{
+    margin: 0;
+}
+
+
+.buttons-container{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+    border: none;
+    border-radius: 4px;
+}
+
+.second-container{
+    margin-bottom: 10px;
+}
+
+
+.third-container{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding a background for readability */
+    padding: 10px;
+    border-radius: 8px;
+}
