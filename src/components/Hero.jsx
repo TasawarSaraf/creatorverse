@@ -13,8 +13,8 @@ const Hero = () =>{
             </div>
 
             <div className="buttons">
-                <button>View All</button>
-                <button>Add Creator</button>
+                <button onClick={() => navigate("view-creators")}>View All</button>
+                <button onClick={()=> navigate("add-creator")}>Add Creator</button>
             </div>
         </div>
     )

@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/Card'
 import Hero from './components/Hero'
+import { BrowserRouter as Router} from 'react-router-dom'
+import Routes from './routes/Routes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,8 +14,13 @@ function App() {
     <>
       <Hero/>
       <Card/>
+
+      {/** Set the routes here on App.js */}
+      <Router>
+        <Routes/>
+      </Router>
     </>
   )
 }
 
-export default App
+export default App;
