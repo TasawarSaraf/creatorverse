@@ -10,15 +10,31 @@ import Routes from './routes/Routes'
 function App() {
   const [count, setCount] = useState(0)
 
+
+  const user = {
+    name: 'John Doe',
+    description: 'Avid traveler, photographer, and coffee enthusiast. Loves exploring new cultures and capturing moments through the lens.',
+    socialMediaLinks: [
+      { platform: 'Instagram', url: 'https://www.instagram.com/johndoe', icon: '/path/to/instagram-icon.png' },
+      { platform: 'Facebook', url: 'https://www.facebook.com/johndoe', icon: '/path/to/facebook-icon.png' },
+      { platform: 'YouTube', url: 'https://www.youtube.com/johndoe', icon: '/path/to/youtube-icon.png' }
+    ],
+    imageUrl: 'https://example.com/john-doe-profile.jpg' // Replace with actual image URL
+  };
+  
+
   return (
     <>
       <Hero/>
-      <Card/>
+      <Card 
+        name={user.name}
+        description={user.description}
+        socialMediaLinks={user.socialMediaLinks}
+        imageUrl={user.imageUrl}
+      />
 
       {/** Set the routes here on App.js */}
-      <Router>
-        <Routes/>
-      </Router>
+      <Routes/>
     </>
   )
 }

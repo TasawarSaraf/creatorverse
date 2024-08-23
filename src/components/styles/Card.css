@@ -30,9 +30,15 @@
 .buttons-container{
     padding: 5px 10px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+    background-color: rgba(0, 0, 0, 0.5); /* Light background for buttons */
     border: none;
     border-radius: 4px;
+}
+
+.buttons-container button{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1px 7px;
 }
 
 .second-container{
