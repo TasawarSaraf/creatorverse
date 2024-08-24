@@ -1,0 +1,110 @@
+/* Container for the whole form */
+.add-creator-container {
+    width: 70%; /* Make it take the full width of the page */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: transparent; /* Darker background color */
+    border-radius: 10px;
+    color: #fff; /* Ensure text is white for contrast */
+  }
+  
+  /* Header style */
+  .add-creator-container h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Form styling */
+  .add-creator-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .add-creator-form-item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .add-creator-form-item label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd; /* Light gray color for labels */
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .add-creator-form-item input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; /* Darker border for inputs */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* White text for contrast */
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-creator-form-item input:focus {
+    border-color: #007bff; /* Highlight input on focus */
+    outline: none;
+  }
+  
+  .add-creator-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Submit and Delete buttons */
+  .submit-button, 
+  .delete-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 48%; /* Make buttons wider to fill the width */
+  }
+  
+  .submit-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Social Media Links section */
+  .add-creator-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ddd; /* Matching label color */
+  }
+  
+  /* Make sure the form takes up full width on all screen sizes */
+  @media (max-width: 768px) {
+    .add-creator-form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .submit-button, 
+    .delete-button {
+      width: 100%; /* Full width for buttons on smaller screens */
+    }
+  }
+  

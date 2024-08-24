@@ -34,8 +34,8 @@
 .third-container {
     position: relative;
     z-index: 2;
-    width: 100%;               /* Ensure containers take full width */
-    max-width: 360px;           /* Limit max width for centering */
+    width: 100%;   /* Ensure containers take full width */
+    max-width: 360px; /* Limit max width for centering */
 }
 
 .first-container {

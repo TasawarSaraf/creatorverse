@@ -1,0 +1,24 @@
+/* General Page Styles */
+.creators-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header Styles */
+  .creators-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Card List Container */
+  .creators-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Make sure cards have equal height */
+    max-width: 1200px; /* Adjust to your container's max width */
+    margin: 0 auto; /* Center the card list */
+  }

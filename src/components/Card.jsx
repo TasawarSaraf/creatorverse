@@ -13,7 +13,7 @@ const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
       };
     
     return(
-        /**this is the image that will be the background of the  */
+        /**this is the image that will be the background (grab from online so it can work)  */
         <div className='card-container' style={{backgroundImage: `url(${imageUrl})`}}>
         {/**this will apply to the container where the name and the two buttons are included  */}
             <div className='first-container'>
@@ -22,10 +22,10 @@ const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
                 </div>
                 <div className='buttons-container'>
                     <button className="info">
-                         <FontAwesomeIcon icon={faPenToSquare} size="1.5x" />
+                         <FontAwesomeIcon icon={faPenToSquare} size="1x" />
                     </button>
                     <button className='edit'>
-                          <FontAwesomeIcon icon={faInfo} size="1.5x" />
+                          <FontAwesomeIcon icon={faInfo} size="1x" />
                     </button>
                 </div>
             </div>
