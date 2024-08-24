@@ -3,52 +3,83 @@
     padding: 20px;
     border-radius: 8px;
     max-width: 400px;
+    min-height: 500px;
     margin: 20px auto;
     background-size: cover;
     background-position: center;
-    color: white; /* Assuming the background might be dark */
-  }
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    /*pushing the content to the middle*/
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;      
+}
 
+.card-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
+.first-container,
+.second-container,
+.third-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;               /* Ensure containers take full width */
+    max-width: 360px;           /* Limit max width for centering */
+}
 
-.first-container{
+.first-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adding a background for readability */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 8px;
 }
 
-
-.name-container{
+.name-container {
     margin: 0;
 }
 
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
 
-.buttons-container{
-    padding: 5px 10px;
+.buttons-container button {
+    padding: 10px;
+    background-color: transparent;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5); /* Light background for buttons */
     border: none;
-    border-radius: 4px;
+    color: white;
 }
 
-.buttons-container button{
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1px 7px;
-}
-
-.second-container{
+.second-container {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
+.font-awesome {
+    margin-right: 15px;
+    cursor: pointer;
+}
 
-.third-container{
+.third-container {
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adding a background for readability */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 8px;
 }

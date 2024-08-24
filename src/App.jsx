@@ -6,6 +6,7 @@ import Card from './components/Card'
 import Hero from './components/Hero'
 import { BrowserRouter as Router} from 'react-router-dom'
 import Routes from './routes/Routes'
+import elonMusk from './assets/elonMusk.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,7 @@ function App() {
       { platform: 'Facebook', url: 'https://www.facebook.com/johndoe', icon: '/path/to/facebook-icon.png' },
       { platform: 'YouTube', url: 'https://www.youtube.com/johndoe', icon: '/path/to/youtube-icon.png' }
     ],
-    imageUrl: 'https://example.com/john-doe-profile.jpg' // Replace with actual image URL
+    imageUrl: elonMusk // Replace with actual image URL
   };
   
 

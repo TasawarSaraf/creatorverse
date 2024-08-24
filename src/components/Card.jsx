@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles/Card.css';
 import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faPenToSquare, faInfo } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
 
@@ -20,8 +21,12 @@ const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
                     {name}
                 </div>
                 <div className='buttons-container'>
-                    <button className="info">Info</button>
-                    <button className='edit'>Edit</button>
+                    <button className="info">
+                         <FontAwesomeIcon icon={faPenToSquare} size="1.5x" />
+                    </button>
+                    <button className='edit'>
+                          <FontAwesomeIcon icon={faInfo} size="1.5x" />
+                    </button>
                 </div>
             </div>
             {/**this will apply to the container where the social media links are included */}
@@ -36,7 +41,7 @@ const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
                         className="card-icon-link"
                         key={link.platform}
                     >
-                        <FontAwesomeIcon icon={platformIcons[link.platform]} size="2x" />
+                        <FontAwesomeIcon className='font-awesome' icon={platformIcons[link.platform]} size="2x" style={{ color: 'white' }} />
                     </a>
                 ))}
             </div>
