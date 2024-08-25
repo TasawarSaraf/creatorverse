@@ -11,9 +11,9 @@ import ViewCreator from "../pages/ViewCreator";
 const Routes = () =>{
     let routes = useRoutes([
         {path: "/", element: <ShowCreators/>},
-        {path: "add-creator", element: <AddCreator/>},
-        {path: "edit-creator", element: <EditCreator/>},
-        {path: "view-creator", element: <ViewCreator/>}
+        {path: "/add-creator", element: <AddCreator/>},
+        {path: "/edit-creator/:id", element: <EditCreator/>},
+        {path: "/view-creator/:id", element: <ViewCreator/>}
     ]);
 
     return routes;

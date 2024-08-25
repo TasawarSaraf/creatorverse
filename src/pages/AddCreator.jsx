@@ -26,12 +26,12 @@ const AddCreator = () =>{
         /**make sure to store the social media links in an array since it is type "jsonb" */
 
         const socialMediaLinks = [
-            youtube && {platform: 'Youtube', url: youtube},
+            youtube && {platform: 'YouTube', url: youtube},
             twitter && {platform: 'Twitter', url: twitter},
             instagram && {platform: 'Instagram', url:instagram}
-        ]
+        ].filter(Boolean); // filters out undefined values
 
-        const {creatorData, error} = await supabase.from('creators').insert([
+        const {data, error} = await supabase.from('creators').insert([
             {
                 name: name,
                 url: socialMediaLinks,

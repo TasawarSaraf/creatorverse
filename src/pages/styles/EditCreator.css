@@ -1,0 +1,139 @@
+.edit-creator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.edit-creator-container h1 {
+    text-align: center;
+    color: rgb(251, 247, 247);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.edit-creator-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-creator-form-item {
+    margin-bottom: 20px;
+}
+
+.edit-creator-form-item label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.edit-creator-form-item input,
+.edit-creator-form-item textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.edit-creator-form-item input:focus,
+.edit-creator-form-item textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.edit-creator-form-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+
+.delete-button{
+    flex: 2;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff; 
+}
+
+
+.delete-button:hover {
+    background-color: #691717;
+}
+
+
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.delete-modal-content{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-button {
+    background-color: #dc3545; /* Red color for delete */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #6c757d; /* Grey color for cancel */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button:hover,
+.cancel-button:hover {
+    opacity: 0.8;
+}

@@ -1,14 +1,28 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles/Card.css';
-import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faYoutube, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPenToSquare, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
+const Card = ({id,name, description, socialMediaLinks, imageUrl}) =>{
+
+    const navigate = useNavigate();
+
+
+    const moreInfo = () => {
+        /**navigate based on the user's id it will share that specific user's detail */
+        navigate(`/view-creator/${id}`);
+    }
+
+    const editInfo = () => {
+        /**navigate to the edit page based on the user's id */
+        navigate(`/edit-creator/${id}`);
+    }
 
     const platformIcons = {
         Instagram: faInstagram,
-        Facebook: faFacebook,
+        Twitter: faXTwitter,
         YouTube: faYoutube,
       };
     
@@ -19,12 +33,13 @@ const Card = ({name, description, socialMediaLinks, imageUrl}) =>{
             <div className='first-container'>
                 <div className='name-container'>
                     {name}
+                    
                 </div>
                 <div className='buttons-container'>
-                    <button className="info">
+                    <button onClick={editInfo} className="info">
                          <FontAwesomeIcon icon={faPenToSquare} size="1x" />
                     </button>
-                    <button className='edit'>
+                    <button onClick={moreInfo} className='edit'>
                           <FontAwesomeIcon icon={faInfo} size="1x" />
                     </button>
                 </div>

@@ -27,12 +27,12 @@ function App() {
   return (
     <>
       <Hero/>
-      <Card 
+      {/* <Card 
         name={user.name}
         description={user.description}
         socialMediaLinks={user.socialMediaLinks}
         imageUrl={user.imageUrl}
-      />
+      /> */}
 
       {/** Set the routes here on App.js */}
       <Routes/>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { supabase } from "../client";
 import Card from "../components/Card";
+import "./styles/ShowCreators.css";
 
 const ShowCreators = () =>{
     /**will be an array of creators */
@@ -12,7 +13,7 @@ const ShowCreators = () =>{
         /**grab from the creator table */
 
         const fetchCreators = async () =>{
-            const {data, error} = await supabase.from('creators').select('name,url,description, imageURL');
+            const {data, error} = await supabase.from('creators').select('id,name,url,description, imageURL');
 
             /**error check  */
 
@@ -29,7 +30,9 @@ const ShowCreators = () =>{
     }, [])
     return(
 
+        
         <div className="creators-container">
+        
             <div className="creators-list">
                 {
                     
@@ -37,6 +40,7 @@ const ShowCreators = () =>{
 
                     <Card
                         key={creator.name} // Use a unique key, assuming 'name' is unique here
+                        id={creator.id}
                         name={creator.name}
                         description={creator.description}
                         socialMediaLinks={creator.url} // Pass the array directly

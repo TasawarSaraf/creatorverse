@@ -18,6 +18,13 @@
     align-items: center;      
 }
 
+/* Card Container */
+.card-container {
+    flex: 1 1 calc(33.333% - 40px); /* Makes the card take up approximately one-third of the container width, minus the gap */
+    max-width: calc(33.333% - 40px); /* Ensures that no card exceeds one-third of the container width */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
 .card-container:before {
     content: '';
     position: absolute;
