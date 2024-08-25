@@ -2,6 +2,12 @@
 
 This project is the prework for Advanced Web Development (WEB103)
 
+## IMPORTANT INFO 
+- I USED `.env` to store my `URL` and `API_KEY` for supabase! 
+- Please use your own `URL` and `API_KEY` to test the application! 
+- Create `.env` file in the root of your project and within it put `VITE_SUPABASE_URL` & `VITE_SUPABASE_API_KEY` 
+- Example: `VITE_SUPABASE_URL=blahblahblah` and `VITE_SUPABASE_API_KEY=blahblahblah` application should work from there.
+
 # Step 0: Setting Up Your Project 
 - [x] Use Vite to set up Creatorverse project
 - [x] Set up React Router
@@ -69,3 +75,7 @@ This project is the prework for Advanced Web Development (WEB103)
 - [x] Added a delete button
 - [x] Wrote asynchronous function to delete a content creator from the database
 - [x] Called the function on the delete button
+
+
+## Video Walkthrough
+- [x] https://drive.google.com/file/d/1aR_JMREOM4iIbR_uUBTjH2u5KhHBFSFN/view

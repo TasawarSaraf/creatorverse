@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Make sure cards have equal height */
-    max-width: 1200px; /* Adjust to your container's max width */
-    margin: 0 auto; /* Center the card list */
+    align-items: stretch; 
+    max-width: 1200px;
+    margin: 0 auto; 
   }

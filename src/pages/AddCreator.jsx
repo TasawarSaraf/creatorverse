@@ -24,7 +24,9 @@ const AddCreator = () =>{
         }
 
         /**make sure to store the social media links in an array since it is type "jsonb" */
-
+        /**Also making sure if youtube or twitter or instagram only then add the object to the socialMediaLinks array
+         * Also make sure to have at least one!
+         */
         const socialMediaLinks = [
             youtube && {platform: 'YouTube', url: youtube},
             twitter && {platform: 'Twitter', url: twitter},
